@@ -44,6 +44,7 @@ public class ServerThread implements Runnable {
 			} catch (Exception e) {
 				StreamUtil.close(this.in, this.out);
 				this.logger.error(null, e);
+				break;
 			}
 		}
 	}
